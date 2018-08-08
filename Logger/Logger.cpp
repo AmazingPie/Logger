@@ -6,7 +6,7 @@
 
 #include "Logger.h"
 
-void Log(int category, Priority priority, const char *message)
+void Log(int category, Priority priority, std::string message)
 {
     time_t t = time(0);
     struct tm *CurrTime = localtime(&t);

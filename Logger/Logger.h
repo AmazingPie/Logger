@@ -21,7 +21,7 @@
 #include <ctime>		//Date and Time
 
 /*Output a log message to different places
-(Bitwise OR to output to multiple places) 
+(Bitwise OR to output to multiple streams) 
 */
 enum OutputType
 {
@@ -39,7 +39,7 @@ enum Priority
 };
 
 /*A simple logger that allows for multiple output types with custom messages.*/
-void Log(int category, Priority priority, const char *message);
+void Log(int category, Priority priority, std::string message);
 
 #endif /* LOGGER_H */
 
