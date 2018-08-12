@@ -39,7 +39,7 @@ enum Priority
 };
 
 /*A simple logger that allows for multiple output types with custom messages.*/
-void Log(int category, Priority priority, std::string message);
+void Log(int category, Priority priority, const char *message);
 
 #endif /* LOGGER_H */
 
